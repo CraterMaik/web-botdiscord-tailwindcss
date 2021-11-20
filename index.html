@@ -214,6 +214,20 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript">
+        function burbujas(){
+            const section = document.querySelector('section')
+            const createElement = document.createElement('span')
+            var size = Math.random() * 60
+
+            createElement.style.width= 25 + size + 'px'
+            createElement.style.height = 25 + size + 'px'
+            createElement.style.left = Math.random() * innerWidth + "px"
+            section.appendChild(createElement)
+            setTimeout(() => { createElement.remove()}, 4000)
+        }
+        setInterval(burbujas, 100)
+        </script>
     <footer class="text-gray-400 body-font">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
@@ -251,22 +265,6 @@
         </span>
       </div>
     </footer>
-    <script type="text/javascript">
-        function burbujas(){
-            const section = document.querySelector('section')
-            const createElement = document.createElement('span')
-            var size = Math.random() * 60
-
-            createElement.style.width= 25 + size + 'px'
-            createElement.style.height = 25 + size + 'px'
-            createElement.style.left = Math.random() * innerWidth + "px"
-            section.appendChild(createElement)
-            setTimeout(() => { createElement.remove()}, 4000)
-        }
-        setInterval(burbujas, 100)
-
-        </script>
-
   </div>
 </body>
 </html>
