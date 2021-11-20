@@ -14,7 +14,7 @@ clip-path: circle()
   color: rgb(255 255 255 / 92%);
   scroll-behavior: smooth;
 }
-section span{
+body span{
     position: fixed;
     bottom: -350px;
     background: transparent;
@@ -23,7 +23,7 @@ section span{
     box-shadow: inset 0 0 10px rgba(109, 214, 255, 0.5);
     animation: animate 4s linear infinite;
 }
-section span:before {
+body span:before {
     content: '';
     position: fixed;
     width: 100%;
