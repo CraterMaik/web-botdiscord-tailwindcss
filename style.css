@@ -4,7 +4,9 @@ body {
   font-family: 'Rubik',
   sans-serif;
 }
-
+.container img {
+clip-path: circle()
+}
 .bg-personal {
   background-image: url(./ySuXtcK.png);
   background-color: #191b1d;
