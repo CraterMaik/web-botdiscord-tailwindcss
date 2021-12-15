@@ -4,37 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/687397125793120288/884297700076564532/icon-web.png"> 
+  <title>SpongeMusic</title>
   <!-- ... -->
   <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 <body class="bg-personal">
     <header class="text-gray-100 body-font">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color" style="background-color: #25415eef;"> 
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <img src="https://cdn.discordapp.com/attachments/687397125793120288/884297700076564532/icon-web.png" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-        <span class="ml-3 text-xl text-pink-400">MyBOT</span>
+        <span class="ml-2 text-xl text-yellow-500">SpongeMusic</span>
       </a>
       <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
         <a class="mr-5 hover:text-white">Comandos</a>
         <a class="mr-5 hover:text-white">Discord</a>
         <a class="mr-5 hover:text-white">Contacto</a>
       </nav>
-      <button class="inline-flex items-center bg-gray-800 text-pink-400 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded mt-4 md:mt-0">Entrar
+      <button class="inline-flex items-center bg-gray-800 text-neutral-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded mt-4 md:mt-0">Entrar
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
       </button>
     </div>
   </header>
+  <div class="bubbles"></div>
   <div class="container mx-auto">
     <section class="text-gray-400 body-font">
       <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
         
         <div class="text-center lg:w-2/3 w-full">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">¡MyBOT en tu servidor de Discord!</h1>
-          <p>Cuenta con más de 100 comandos y varios sistemas customizables.</p>
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">¡ El Mejor Bot De Música !</h1>
+          <p>SpongeMusic el único bot con ritmo para tu servidor 🎵.</p>
           <p class="leading-relaxed mb-8 text-pink-400">Moderación, Sugerencias, Estadísticas, Tickets, Economía, Bienvenidas, Prefix, Niveles, Música, Verificación, ChatBot, NitroChat, Giveaways, Encuestas, Antiraid.</p>
           
         </div>
@@ -214,6 +218,22 @@
         </div>
       </div>
     </section>
+    </div>
+    <script type="text/javascript">
+      function burbujas(){
+          const section = document.querySelector('div.bubbles')
+          const createElement = document.createElement('b')
+          var size = Math.random() * 60
+
+          createElement.style.width= 25 + size + 'px'
+          createElement.style.height = 25 + size + 'px'
+          createElement.style.left = Math.random() * innerWidth + "px"
+          section.appendChild(createElement)
+          setTimeout(() => { createElement.remove()}, 4000)
+      }
+      setInterval(burbujas, 100)
+
+    </script>
     <footer class="text-gray-400 body-font">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
